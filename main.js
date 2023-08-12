@@ -12,7 +12,13 @@ function removeTask(i) {
     }
 }
 
-removeTask(2)
+function prioritizeTask(i) {
+    const taskToPrioritize = tasks[i]
+    tasks.splice(i, 1)
+    tasks.unshift(taskToPrioritize)
+}
+
+prioritizeTask(2)
 
 console.log(tasks)
 
