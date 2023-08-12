@@ -18,7 +18,11 @@ function prioritizeTask(i) {
     tasks.unshift(taskToPrioritize)
 }
 
-prioritizeTask(2)
+function completeTask(i) {
+    tasks[i] = "✔ " + tasks[i]
+}
 
+
+completeTask(1)
 console.log(tasks)
 
