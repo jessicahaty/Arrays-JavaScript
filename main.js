@@ -22,7 +22,20 @@ function completeTask(i) {
     tasks[i] = "✔ " + tasks[i]
 }
 
+function getCompletedTasks(tasksList) {
+    const completedTasks = tasksList.filter(function(taskName) {
+        return taskName.startsWith("✔");
+        });
+    return completedTasks;
+}
 
 completeTask(1)
+
+const completedTasks = getCompletedTasks(tasks)
+
+console.log(completedTasks)
+
 console.log(tasks)
+
+
 
