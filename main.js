@@ -35,6 +35,12 @@ const completedTasks = getCompletedTasks(tasks)
 
 console.log(completedTasks)
 
+function updateTask (i, nome) {
+    tasks[i] = nome
+}
+
+updateTask(0, "Ajudar Jr")
+
 console.log(tasks)
 
 
