@@ -41,6 +41,12 @@ function updateTask (i, nome) {
 
 updateTask(0, "Ajudar Jr")
 
+function sortTasks (array){
+    return array.sort()
+}
+
+tasks = sortTasks(tasks)
+
 console.log(tasks)
 
 
