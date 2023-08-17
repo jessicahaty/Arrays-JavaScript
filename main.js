@@ -47,6 +47,19 @@ function sortTasks (array){
 
 tasks = sortTasks(tasks)
 
+function findTasks(taskName){
+    const taskIndex = tasks.findIndex(task => task === taskName)
+
+    if (taskIndex !== -1) {
+        return `A tarefa "${taskName}" foi encontrada no índice ${taskIndex}.`
+      } else {
+        return `A tarefa "${taskName}" não foi encontrada.`
+      }
+}
+
+console.log(findTasks('Codar'))
+console.log(findTasks('Dormir'))
+
 console.log(tasks)
 
 
